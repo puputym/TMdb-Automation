@@ -14,7 +14,8 @@ export default class MoviePage {
     cy.get(elementLocator.clickAvatar).should('be.visible').scrollIntoView().click({force: true});
     cy.contains(elementLocator.clickAvatarOpen, 'Lists').click({force: true});
     cy.get(elementLocator.clickOverview).should('be.visible').click();
-    cy.contains(elementLocator.clickFavorite, 'Favorites').click({force: true});
-    cy.contains(elementLocator.clickMovie, "Movies").click({force: true});
+    cy.contains(elementLocator.clickFavorite, 'Favorites').should('be.visible').click({force: true});
+    cy.get(elementLocator.clickMovie).should('be.visible').click();
+    cy.contains(elementLocator.verifySuccessFavMovie, 'Remove').should('be.visible');
   }
 }

@@ -17,5 +17,6 @@ export class ElementLocators{
     clickAvatarOpen =".k-tooltip-content > .settings_content > :nth-child(2) > :nth-child(2) > a"
     clickOverview = ".false.k-first > :nth-child(1)"
     clickFavorite = ".group > .false > span.k-link"
-    ClickMovie = ".group > .false > .k-animation-container > .k-group > .k-first > .k-link"
+    ClickMovie = "#new_shortcut_bar_mn_active > .k-animation-container > .k-group > .k-first > .k-link"
+    verifySuccessFavMovie = ":nth-child(4) > .remove_list_item"
 }
