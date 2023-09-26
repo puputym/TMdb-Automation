@@ -1,4 +1,5 @@
 export class ElementLocators{
+    //login
     headerLogin = ".primary > :nth-child(3) > a"
     loginUsername = "#username"
     loginPassword = "#password"
@@ -13,6 +14,16 @@ export class ElementLocators{
     buttonFav = "#favourite"
     buttonFavBeforeLogin = "#original_header > div.header_poster_wrapper.false > section > ul > li:nth-child(3)"
 
+    favMovie2 = ":nth-child(2) > div.image > .wrapper > .image > .poster"
+    favMovie3 = ":nth-child(3) > div.image > .wrapper > .image > .poster"
+
+    //remove Movie
+    removeMovie= ":nth-child(4) > .remove_list_item"
+
+    //Order Movie
+    orderMovie= ".group_dropdown > .selected > span"
+
+    //verify
     clickAvatar = ".no_click > .avatar"
     clickAvatarOpen =".k-tooltip-content > .settings_content > :nth-child(2) > :nth-child(2) > a"
     clickOverview = ".false.k-first > :nth-child(1)"

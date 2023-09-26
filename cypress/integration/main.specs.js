@@ -12,12 +12,33 @@ describe('Running Automation Test TMDB Movie', ()=>{
     })
     beforeEach(() =>{
         loginPage.visit();
-        loginPage.login();
-        // loginPage.verifySuccessLogin();
     })
 
-    it('should be able to mark favorite movie', ()=>{
+    it('should be able to mark favorite movie 1', ()=>{
+        loginPage.login();
         moviePage.favoriteMovie();
+        moviePage.verifyFavoriteMovie();
+    })
+
+    it('should be able to mark favorite movie 2', ()=>{
+        loginPage.login();
+        moviePage.favoriteMovie2();
+        moviePage.verifyFavoriteMovie();
+    })
+    it('should be able to mark favorite movie 3', ()=>{
+        loginPage.login();
+        moviePage.favoriteMovie3();
+        moviePage.verifyFavoriteMovie();
+    })
+    it('should be able to Order favorite movie ', ()=>{
+        loginPage.login();
+        moviePage.verifyFavoriteMovie();
+        moviePage.orderMovie();
+    })
+    it('should be able to remove favorite movie 1', ()=>{
+        loginPage.login();
+        moviePage.verifyFavoriteMovie();
+        moviePage.removeMovie();
         moviePage.verifyFavoriteMovie();
     })
 })
