@@ -15,5 +15,8 @@ export default class LoginPage {
     cy.get(elementLocator.loginButton, { failOnStatusCode: false }).should('be.visible').click();
     }
 
+  verifySuccessLogin(){
+    //cy.contains(elementLocator.verifySuccessLogin).should('be.visible')
+  }
 }
 

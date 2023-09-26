@@ -7,15 +7,15 @@ export class ElementLocators{
     verifySuccessLogin = ".about > :nth-child(1) > h2 > a"
 
     //Select Favorite Movie
-    headerMovie = '[style="z-index: auto;"] > .no_click'
-    headerMovieOpen = ""
+    headerMovie = '.dropdown_menu > :nth-child(1) > .no_click'
+    headerMovieOpen = ".k-item.k-state-border-down > .k-animation-container > .k-group > .k-first > .k-link"
     favMovie = ":nth-child(1) > div.image > .wrapper > .image > .poster"
     buttonFav = "#favourite"
     buttonFavBeforeLogin = "#original_header > div.header_poster_wrapper.false > section > ul > li:nth-child(3)"
 
     clickAvatar = ".no_click > .avatar"
-    clickAvatarOpen =""
-    clickOverview = ".true > :nth-child(1)"
-    clickFavorite = " "
-    ClickMovie = " "
+    clickAvatarOpen =".k-tooltip-content > .settings_content > :nth-child(2) > :nth-child(2) > a"
+    clickOverview = ".false.k-first > :nth-child(1)"
+    clickFavorite = ".group > .false > span.k-link"
+    ClickMovie = ".group > .false > .k-animation-container > .k-group > .k-first > .k-link"
 }

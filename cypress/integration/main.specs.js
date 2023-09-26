@@ -8,6 +8,7 @@ describe('Running Automation Test TMDB Movie', ()=>{
     beforeEach(() =>{
         loginPage.visit();
         loginPage.login();
+        loginPage.verifySuccessLogin();
     })
     it('should be able to mark favorite movie', ()=>{
         moviePage.favoriteMovie();
