@@ -12,13 +12,13 @@ npm : '8.3.1'
 # Gherkin Skenario
 Feature: Mark as Favorite on TMDb
 
-  Scenario: User marks a movie as favorite
+  ``Scenario: User marks a movie as favorite
     Given the user is logged in to TMDb
     When the user selects a popular movie
     And marks it as favorite
     Then the movie should appear in the user's favorite movies list
     And the user should be able to remove the movie from their favorites
-    And the user should be able to reorder their favorite movies list
+    And the user should be able to reorder their favorite movies list`
 
   Scenario: User marks multiple movies as favorites
     Given the user is logged in to TMDb
